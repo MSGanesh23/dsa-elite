@@ -64,7 +64,10 @@ public class Interleavings{
 
             result = new ArrayList<>();
 
+            System.out.println("Enter the first string : ");
             String a = scanner.next();
+
+            System.out.println("Enter the second string : ");
             String b = scanner.next();
 
             StringBuilder path = new StringBuilder();
