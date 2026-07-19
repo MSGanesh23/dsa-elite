@@ -6,8 +6,8 @@ class Node{
     Node(int key)
     {
         data = key;
-        Node.left = null;
-        Node.right = null;
+        left = null;
+        right = null;
     }
 }
 

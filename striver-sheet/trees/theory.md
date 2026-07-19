@@ -52,7 +52,17 @@ There are two ways to traverse a tree
     Left -> Root -> Right 
 
 2. Breadth First Search 
-    Level wise traversal 
+    Level order traversal 
+
+-> Level order traversal 
+    First, we take a queue and push the root element into the queue. Then, we take a arraylist of arraylist to store the elements on each level of the tree. After that, we will check whether the node in the queue has left and right child, if it has we will add them in the queue and then pop the node in the queue. We will repeat this process until the queue is empty. If the queue is empty, that means we got the level order traversal. 
+
+
+# Iterative Preorder traversal (without recursion)
+
+First, take a stack, then insert the first root element into the stack. Then, pop the element and insert it into the result arraylist. Then insert left and right of the popped element from the stack. First right then left because we want to take the left element first in the next iteration. The stack is needed since we need to tell which element to iterate next according to the preorder traversal algroithm. 
+
+If the stack is empty, then it means that the traversal is complete. 
 
 
 
