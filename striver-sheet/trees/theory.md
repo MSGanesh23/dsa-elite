@@ -64,5 +64,11 @@ First, take a stack, then insert the first root element into the stack. Then, po
 
 If the stack is empty, then it means that the traversal is complete. 
 
+# iterative Inorder Traversal (without recursion)
+
+First, take a stack then store the first root element, then keep moving to the right and inserting the nodes encountered in the stack. Once null is encountered then print the present node and move to the right. If right is null, then move to the top most element of the stack. Repeat this process until the stack is empty. 
+
+If the stack is empty, then it means the traversal is complete. 
+
 
 
