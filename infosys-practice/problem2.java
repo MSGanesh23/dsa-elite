@@ -1,8 +1,8 @@
-//Given an array of integers, calculate its sum.
+//Find the largest element in an array.
 
 import java.util.*;
 
-public class problem1{
+public class problem2{
     public static void main(String[] args)
     {
         Scanner scanner = new Scanner(System.in);
@@ -20,22 +20,27 @@ public class problem1{
             arr[i] = scanner.nextInt();
         }
 
-        System.out.println("Sum of array elements : " + arraySum(arr));
+        System.out.println("Largest element in array : " + largestElement(arr));
+
 
     }
 
-
-    static int arraySum(int[] arr)
+    static int largestElement(int[] arr)
     {
         int n = arr.length;
 
-        int sum = 0;
+        int largest = arr[0];
 
-        for(int i=0; i<n; i++)
+        for(int i=1; i<n; i++)
         {
-            sum += arr[i];
+            if(largest<arr[i])
+            {
+                largest = arr[i];
+            }
         }
 
-        return sum;
+        return largest;
+
+
     }
 }
