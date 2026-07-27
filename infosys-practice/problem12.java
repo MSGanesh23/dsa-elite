@@ -1,8 +1,8 @@
-//Return true if a target exists in an array; otherwise return false.
+//Find the index of the first occurrence of a target.
 
 import java.util.*;
 
-public class problem11{
+public class problem12{
     public static void main(String[] args)
     {
         Scanner scanner = new Scanner(System.in);
@@ -24,28 +24,38 @@ public class problem11{
 
         int key = scanner.nextInt();
 
-        if(linearSearch(arr, key))
+        int index = linearSearch(arr, key);
+
+        if(index!=-1)
         {
-            System.out.println("true");
+        System.out.println("First occurance of the target : " + index);
         }
         else
         {
-            System.out.println("false");
+            System.out.println("Target not found!");
         }
+
+
+
+
+
     }
 
-    static boolean linearSearch(int[] arr, int key)
+    static int linearSearch(int[] arr, int key)
     {
         int n = arr.length;
+
+        int index = -1;
 
         for(int i=0; i<n; i++)
         {
             if(arr[i]==key)
             {
-                return true;
+                index = i;
+                break;
             }
         }
 
-        return false;
+        return index;
     }
 }
