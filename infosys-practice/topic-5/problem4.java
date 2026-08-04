@@ -1,14 +1,6 @@
-/*  Find the second largest element in:
+//Given an array, find the largest and second-largest distinct values.
 
-[10, 5, 8, 20, 15]
-
-Do it in O(n).
-
-*/
-
-import java.util.*;
-
-public class problem1{
+public class problem4{
     public static void main(String[] args)
     {
         Scanner scanner = new Scanner(System.in);
@@ -41,6 +33,8 @@ public class problem1{
                 second = arr[i];
             }
         }
+
+        System.out.println("Largest element : " + largest);
 
         if(second!=Integer.MIN_VALUE)
         {

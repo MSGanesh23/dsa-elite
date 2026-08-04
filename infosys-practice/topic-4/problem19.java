@@ -21,7 +21,7 @@ public class problem19{
         }
         
         int largest = arr[0];
-        int second = -1;
+        int second = Integer.MIN_VALUE;
 
         for(int i=1; i<n; i++)
         {
@@ -36,7 +36,7 @@ public class problem19{
             }
         }
 
-        if(second!=-1)
+        if(second!=Integer.MIN_VALUE)
         {
             System.out.println("Second largest element : " + second);
         } 
