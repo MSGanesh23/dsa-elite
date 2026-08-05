@@ -68,7 +68,17 @@ If the stack is empty, then it means that the traversal is complete.
 
 First, take a stack then store the first root element, then keep moving to the right and inserting the nodes encountered in the stack. Once null is encountered then print the present node and move to the right. If right is null, then move to the top most element of the stack. Repeat this process until the stack is empty. 
 
-If the stack is empty, then it means the traversal is complete. 
+If the stack is empty, then it means the traversal is complete.
+
+# Iterative postorder Traversal 
+
+# 2 stacks
+
+Take a stack1 and push the root element into it. Then traverse the neighbours of root and push them into the stack from left to right. Then pop the top most element of the stack into stack 2 and visit the neighbours of that element and push them into stack 1. Repeat this process until stack 1 is empty. 
+
+Then print stack 2 in stack wise fashion and you will get the postorder traversal. 
+
+
 
 
 
